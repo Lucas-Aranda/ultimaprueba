@@ -152,7 +152,6 @@ body {
 	margin-bottom: 80px;
 }
 #carouselExampleFade {
-	border: 10px solid rgb(0 0 0 / 9%);
 	border-radius: 5px;
 }
 
@@ -238,4 +237,15 @@ body {
 .videohtml {
 	margin: 30px;
 	margin-bottom: 100px;
+}
+
+// equipo
+
+@mixin fontEquipo {
+	color: #fff;
+	border: 5px solid #ff4555;
+}
+.fontEquipo {
+	font-size: 35px;
+	@include fontEquipo()
 }
