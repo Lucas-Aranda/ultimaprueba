@@ -3,8 +3,6 @@
 	padding: 0;
 }
 
-// Header
-
 body {
 	width: 100%;
 	background-color: rgba(182, 182, 182, 0.918);
@@ -23,7 +21,6 @@ body {
 	height: auto;
 }
 
-// Navbar
 
 .logboton {
 	margin-left: 50px;
@@ -83,7 +80,6 @@ body {
 	margin-top: 50px;
 }
 
-// Video
 
 #videoIndex {
 	width: 100%;
@@ -105,7 +101,6 @@ body {
 	}
 }
 
-// SubNoticia
 
 .subNoticia {
 	font-family: fantasy;
@@ -119,8 +114,6 @@ body {
 		margin-left: 210px;
 	}
 }
-
-// Footer
 
 .footerClass {
 	background-color: rgb(75, 75, 75);
@@ -152,10 +145,9 @@ body {
 	margin-bottom: 80px;
 }
 #carouselExampleFade {
+
 	border-radius: 5px;
 }
-
-// Grid
 
 .conteiner {
 	display: grid;
