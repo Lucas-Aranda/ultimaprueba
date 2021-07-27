@@ -19,8 +19,6 @@ body {
 
 .imgIndex {
   margin: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100px;
   height: auto;
@@ -69,9 +67,6 @@ body {
 .logoIndex {
   min-width: 50%;
   min-height: 50%;
-  height: px;
-  width: auto;
-  line-height: px;
   margin-right: 20rem;
 }
 
@@ -108,9 +103,12 @@ body {
 /* video */
 
 #videoIndex {
+  margin-top: 100px;
+  margin-bottom: 100px;
   width: 100%;
   height: auto;
   border-radius: 10px;
+  box-shadow: 1px 10px 25px rgba(0,0,0,0.9);
   z-index: 100;
 }
 
@@ -120,8 +118,13 @@ body {
 }
 
 .linkVideo a {
-  color: #fff;
+  color: rgba(0,0,0,0.5);
   text-decoration: none;
+}
+
+.linkVideo a:hover {
+  transition: 0.6s;
+  color: #fff;
 }
 
 .linkVideo a h3 {
@@ -139,6 +142,7 @@ body {
 }
 
 .subnoti img {
+  padding-bottom: 100px;
   width: 300px;
   height: auto;
   margin-left: 210px;
@@ -147,6 +151,7 @@ body {
 /* footer */
 
 .footerClass {
+  position: relative;
   background-color: #4b4b4b;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -306,12 +311,13 @@ body {
 /* html equipo */
 
 .box-equipo {
-  margin: 50px;
   margin-top: 100px;
+  height: auto;
 }
 
-.box-equipo img {
-  margin: 70px;
+.box-equipo .imgEquipo {
+  margin: 100px;
   border: 4px solid #fff;
   border-radius: 10px;
 }
+
