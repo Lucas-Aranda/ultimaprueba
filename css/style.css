@@ -111,25 +111,24 @@ body {
   z-index: 100;
 }
 
-.linkVideo {
+.mediaVideo .linkVideo {
   font-family: fantasy;
   z-index: 200;
 }
 
-.linkVideo a {
+.mediaVideo .linkVideo a {
   color: rgba(0,0,0,0.5);
   text-decoration: none;
 }
 
-.linkVideo a:hover {
+.mediaVideo .linkVideo a:hover {
   transition: 0.6s;
   color: #fff;
 }
 
-.linkVideo a h3 {
+.mediaVideo .linkVideo a h3 {
   font-size: 180px;
   margin: 30px;
-  margin-top: 300px;
 }
 
 /* subnoticias */
@@ -221,7 +220,7 @@ body {
   grid-row: 3 / 2;
 }
 
-.conteiner .cajaVideo {
+.conteiner .mediaVideo {
   grid-column: -4 / -1;
   grid-row: 3 / 3;
 }
@@ -497,7 +496,7 @@ body {
 @media screen and (max-width: 800px) {
   
   .nav-link {
-  width: 35%;
+  width: 50%;
  }
 
   .carrucel {
@@ -526,9 +525,19 @@ body {
  }
  .mediaVideo {
    display: grid;
-   grid-template-columns: (1, 1fr);
-   grid-template-rows: (1, auto);
+   grid-template-columns: repeat(1, 1fr);
+   grid-template-rows: repeat(1, auto);
  }
+
+ #videoIndex {
+   grid-column: 1 / 2;
+   grid-row: 1 / 2;
+ }
+
+  .cajaVideo .linkVideo a h3{
+    grid-column: 1 / 2 ;
+    grid-row: 1 / 2 ;
+  }
 
  #videoIndex {
   margin-bottom: 100px;
@@ -539,24 +548,24 @@ body {
   z-index: 100;
  }
 
- .linkVideo {
+ /* .cajaVideo .linkVideo {
   font-family: fantasy;
   z-index: 200;
- }
+ } */
 
  .linkVideo a {
   color: #fff;
   text-decoration: none;
  }
 
- .linkVideo a h3 {
+ .cajaVideo .linkVideo a h3 {
   font-size: 30px;
   margin: 30px;
  }
 
  #imgSub {
    width: 20rem;
-   
+
  }
  
  .subnoti img {
@@ -566,4 +575,40 @@ body {
   margin-left: 20px;
 }
 
+}
+
+/* html equipo */
+
+@media screen and (max-width: 800px) {
+
+  .box-equipo {
+    display: flex;
+    flex-direction: column;
+   margin-top: 100px;
+   height: auto;
+ }
+
+ .box-equipo .imgEquipo {
+  margin: 10px;
+  border: 4px solid #fff;
+  border-radius: 10px;
+  filter: grayscale(100%);
+  transition: all 800ms linear;
+
+ }
+
+ .imgEquipo{
+    margin: 25px;
+    opacity: 0.8;
+    border: 10px solid #eee;
+ }
+ 
+ .imgEquipo:hover {
+  transition: all 800ms linear;
+  opacity: 1;
+  -webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+  -moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+  box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+  filter: grayscale(0%);
+ }
 }
