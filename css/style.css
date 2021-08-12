@@ -417,6 +417,11 @@ body {
   margin-bottom: 30px;
 }
 
+ .textoForm {
+  width: 80%;
+  height: 80%;
+ }
+
 .contenedorGrid {
   display: grid;
   grid-template-columns: repeat(3, 0.5fr);
@@ -725,7 +730,7 @@ body {
 
  #tituloVid h3{
   color: #ff4555;
-  font-family: fantasy;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width: 100%;
   margin: 0px;
   margin-top: 40px;
